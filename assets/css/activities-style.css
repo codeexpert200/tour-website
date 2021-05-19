@@ -1,0 +1,225 @@
+html{
+    background: url(../images/activities-background.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (min-width: 1025px) {
+  
+    body{
+        margin: 0 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto;
+        align-items: stretch;
+    }
+    
+
+    .homepage-navbar{
+        clear:both;
+        overflow:hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        list-style-type: none;
+        background-color: #f3f3f5;
+        opacity: 0.8;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+      
+    .navbar-list{
+        float:right;
+        padding-right: 10px;
+    }
+      
+    .navbar-logo img{
+        float:left;
+        max-height: 100%;
+        padding: 5px;
+        padding-left: 10px;
+        width: auto;
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .navbar-list li{
+        display: inline;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .nav-element a{
+        text-decoration: none;
+        color: #203d35;
+    }
+
+    .nav-element a:hover{
+        color: #da9e2e;
+    }
+
+    .active-page{
+        border-bottom: 2px solid #da9e2e;
+    }
+
+    .homepage-main-content{
+        height: 100%;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        z-index: -1;
+    }
+
+    .activity{
+        background-color: #f3f3f5;
+		opacity: 0.98; 
+        background-size: cover;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+        grid-template-areas:
+                "mainText mainText"
+                "divImg divMap";
+        margin: 15vh 10% 100px;
+    }
+
+    div{
+        background-color: #f3f3f5;
+        opacity: 0.97; 
+        background-size: cover;
+        padding: 5px;
+    }
+    .zoom{
+        width:auto;
+        height:auto;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+    }
+    .zoom:hover{
+        transform: scale(1.2);
+    }
+
+    .mainText{
+        grid-area: mainText;
+    }
+
+    .divImg{
+        grid-area: divImg;
+    }
+
+    .divMap{
+        grid-area: divMap;
+    }
+}
+  
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+
+    body{
+        margin: 0 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 30% auto;
+        align-items: stretch;
+    }
+
+    .homepage-navbar{
+        clear:both;
+        overflow:hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        list-style-type: none;
+        background-color: #f3f3f5;
+        opacity: 0.7;
+    }
+
+    .navbar-list{
+        float:right;
+        padding-right: 10px;
+    }
+      
+    .navbar-logo img{
+        float:left;
+        max-height: 100%;
+        padding: 5px;
+        padding-left: 10px;
+        width: auto;
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .navbar-list li{
+        display: inline;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .nav-element a{
+        margin-bottom: 0px;
+        text-decoration: none;
+        color: #203d35;
+    }
+
+    .nav-element a:hover{
+        color: #da9e2e;
+    }
+
+    .active-page{
+        border-bottom: 2px solid #da9e2e;
+    }
+
+    .activity{
+        background-color: #f3f3f5;
+		opacity: 0.98; 
+        background-size: cover;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+        grid-template-areas:
+                "mainText mainText"
+                "divImg divMap";
+        margin: 15vh 10% 100px;
+    }
+
+    div{
+        background-color: #f3f3f5;
+        opacity: 0.97; 
+        background-size: cover;
+        padding: 5px;
+    }
+    .zoom{
+        width:auto;
+        height:auto;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+    }
+    .zoom:hover{
+        transform: scale(1.2);
+    }
+
+    .mainText{
+        grid-area: mainText;
+    }
+
+    .divImg{
+        grid-area: divImg;
+    }
+    
+    .divMap{
+        grid-area: divMap;
+    }
+}
