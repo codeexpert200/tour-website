@@ -1,0 +1,109 @@
+html
+{
+    background: url(../images/hotel_photo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin:0
+}
+.mainText
+{
+    grid-area: mainText;
+}
+.divImg
+{
+    grid-area: divImg;
+}
+.divMap
+{
+    grid-area: divMap;
+}
+
+
+/* Navbar styling */
+.homepage-navbar{
+	clear:both;
+	overflow:hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	list-style-type: none;
+	background-color: #f3f3f5;
+	opacity: 0.95; 
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+	
+.navbar-list{
+	float:right;
+	padding-right: 10px;
+}
+	
+.navbar-logo img{
+	float:left;
+	max-height: 100%;
+	padding: 5px;
+	padding-left: 10px;
+	width: auto;
+	max-width: 80px;
+	max-height: 80px;
+}
+
+.navbar-list li{
+	display: inline;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.nav-element a{
+	text-decoration: none;
+	color: #203d35;
+}
+
+.nav-element a:hover{
+	color: #da9e2e;
+}
+
+.active-page{
+	border-bottom: 2px solid #da9e2e;
+}
+
+/* End of Navbar styling */
+
+
+div
+{
+    background-color: #f3f3f5;
+	opacity: 0.97; 
+    background-size: cover;
+    padding: 5px;
+}
+.zoom
+{
+    width:auto;
+    height:auto;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.zoom:hover
+{
+    transform: scale(1.2);
+}
+@media only screen and (min-width: 15in)
+{
+    .hotel
+    {
+        background-color: #f3f3f5;
+		opacity: 0.97; 
+        background-size: cover;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+        grid-template-areas:
+                "mainText mainText"
+                "divImg divMap";
+        margin: 15vh 10% 100px;
+    }
+}
